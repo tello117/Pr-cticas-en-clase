@@ -9,14 +9,14 @@
 }
 
 .title{
-    font-size: 50px;
-    margin-bottom: 40px;
+    font-size: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
     font-weight: bold;
 }
 .subtitle{
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 input{
@@ -24,20 +24,31 @@ input{
     padding: 10px;
     border-width: 2px;
     border-color: rgb(64, 212, 168);
-    border-radius: 7px;
+    border-radius: 9px;
     border-style: solid;
 }
 .boton{
-    width: 35px;
-    margin: 18px;
-    padding: 9px;
+    margin: 5%;
+    padding: 18%;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.4rem;
     text-align: center;
 }
-.container_boton{
+.container_botones{
     display: flex;
-    width: 100%;
     justify-content: center;
+    margin: 8px;
+    padding: 15px;
+}
+@media(max-width:768px){
+    .container_botones{
+        display: flex;
+        flex-direction: column;
+        .boton{
+            margin: 0%;
+            width: 5vw;
+            margin: 5%;
+        }
+    }
 }
