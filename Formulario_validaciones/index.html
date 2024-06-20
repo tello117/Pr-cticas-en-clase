@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario con validaciones</title>
+</head>
+<body>
+    <div class="container_form">
+        <form class="form" action="" method="get">
+            <div class="div_izquierda">
+                <label for="name">Nombre de usuario:</label><br>
+                <input class="input" type="text" name="name" id="name" placeholder="ej. Eleuterio13"
+                minlength="5" maxlength="15" required pattern="[a-zA-Z0-9]{5,15}"><br>
+    
+                <label for="fch">Fecha de nacimiento:</label><br>
+                <input class="input" type="date" name="fch" id="fch"
+                pattern="\d{2}-\d{2}-\d{4}" required><br>
+    
+                <label for="Email">Email</label><br>
+                <input class="input" type="email" name="email" id="email"
+                 minlength="15" maxlength="28"
+                pattern="" required><br>
+
+                <label for="tel">Telefono:</label><br>
+                <input class="input" type="tel" name="tel" id="tel"  
+                minlength="10" maxlength="10" required
+                pattern="\+\d{2}\s\d{10}"><br>
+
+                <input class="boton" type="submit" name="boton" id="boton">
+            </div>
+            <div class="div_derecha">
+                <label>Código postal:</label><br>
+                <input class="input" type="text" name="cp" id="cp"
+                minlength="5" maxlength="5" required pattern="[0-9]{5}"><br>
+    
+                <label for="pass">Contraseña:</label><br>
+                <input class="input" type="password" name="pass" id="pass"  
+                minlength="10" required><br>
+    
+                <label for="pass2">Confirma tu contraseña:</label><br>
+                <input class="input" type="password" name="pass2" id="pass2"  
+                minlength="10" required><br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
