@@ -13,36 +13,36 @@
         <form class="form" action="" method="get">
             <div class="div_izquierda">
                 <label for="name">Nombre de usuario:</label><br>
-                <input class="input" type="text" name="name" id="name" placeholder="ej. Eleuterio13"
+                <input class="input" type="text" name="name" id="name" title="juan_01H"
                 minlength="5" maxlength="15" required pattern="[a-zA-Z0-9]{5,15}"><br>
     
                 <label for="fch">Fecha de nacimiento:</label><br>
-                <input class="input" type="date" name="fch" id="fch"
+                <input class="input" type="date" name="fch" id="fch" title="ingresa la fecha"
                 pattern="\d{2}-\d{2}-\d{4}" required><br>
     
                 <label for="Email">Email</label><br>
                 <input class="input" type="email" name="email" id="email"
-                 minlength="15" maxlength="30"
+                 minlength="15" maxlength="30" title="ejemplo@gmail.com"
                 pattern=".{3,}\@[a-z]{3,}\.[a-z]{2,}|\.[a-z]{2,}" required><br>
 
                 <label for="tel">Telefono:</label><br>
                 <input class="input" type="tel" name="tel" id="tel"  
-                minlength="14" maxlength="14" required
-                pattern="\+\d{2}\s\d{10}"><br>
+                minlength="14" maxlength="14" title="+52 7771117771"
+                pattern="\+\d{2}\s\d{10}" required><br>
 
                 <input class="boton" type="submit" name="boton" id="boton">
             </div>
             <div class="div_derecha">
                 <label>Código postal:</label><br>
-                <input class="input" type="text" name="cp" id="cp"
+                <input class="input" type="text" name="cp" id="cp" title="43002"
                 minlength="5" maxlength="5" pattern="[0-9]{5}" required><br>
     
                 <label for="pass">Contraseña:</label><br>
-                <input class="input" type="password" name="pass" id="pass"  
+                <input class="input" type="password" name="pass" id="pass" title="ingresa minimo 8 caracteres(Aza?#4)"  
                 minlength="8" pattern=".{8,}|\s" required><br>
     
                 <label for="pass2">Confirma tu contraseña:</label><br>
-                <input class="input" type="password" name="pass2" id="pass2"  
+                <input class="input" type="password" name="pass2" id="pass2" title="ingresa de nuevo la contreña"
                 minlength="8" pattern=".{8,}|\s" required><br>
             </div>
         </form>
